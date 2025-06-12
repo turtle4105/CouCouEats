@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CouCouMain</class>
+ <widget class="QMainWindow" name="CouCouMain">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>711</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CouCouMain</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page1Start">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>첫 화면</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page2Start">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>시작하기</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page3Main">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="5,1">
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="text">
+             <string>상단 지도 부분</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="text">
+             <string>알림</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0">
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="BtnHome">
+            <property name="text">
+             <string>홈</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnSearch">
+            <property name="text">
+             <string>검색</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnFavorite">
+            <property name="text">
+             <string>즐겨찾기</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnOrders">
+            <property name="text">
+             <string>주문내역</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="BtnMyEats">
+            <property name="text">
+             <string>My이츠</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>424</width>
+             <height>551</height>
+            </rect>
+           </property>
+           <widget class="QWidget" name="horizontalLayoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>421</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="Search_V_Layout">
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>검색 </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTextEdit" name="textEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>343</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>343</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="verticalLayoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>30</y>
+              <width>433</width>
+              <height>521</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="main_layout"/>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>462</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>CATEGORY_IMG/ASIAN.jpeg</file>
+        <file>CATEGORY_IMG/BENTTO.jpeg</file>
+        <file>CATEGORY_IMG/BOONSIK.jpeg</file>
+        <file>CATEGORY_IMG/BURGER.jpeg</file>
+        <file>CATEGORY_IMG/CHICKEN.jpeg</file>
+        <file>CATEGORY_IMG/CHINA.jpeg</file>
+        <file>CATEGORY_IMG/COFFEE.jpeg</file>
+        <file>CATEGORY_IMG/DESSERT.jpeg</file>
+        <file>CATEGORY_IMG/DONGASS.jpeg</file>
+        <file>CATEGORY_IMG/GOOEE.jpeg</file>
+        <file>CATEGORY_IMG/HANSIK.jpeg</file>
+        <file>CATEGORY_IMG/JAPAN.jpeg</file>
+        <file>CATEGORY_IMG/JJIM_TANG.jpeg</file>
+        <file>CATEGORY_IMG/JOKBAL.jpeg</file>
+        <file>CATEGORY_IMG/JOOK.jpeg</file>
+        <file>CATEGORY_IMG/MEXICO.jpeg</file>
+        <file>CATEGORY_IMG/ONE.jpeg</file>
+        <file>CATEGORY_IMG/PIZZA.jpeg</file>
+        <file>CATEGORY_IMG/SALAD.jpeg</file>
+        <file>CATEGORY_IMG/SANDWICH.jpeg</file>
+        <file>CATEGORY_IMG/SEAFOOD.jpeg</file>
+        <file>CATEGORY_IMG/SNACK.jpeg</file>
+        <file>CATEGORY_IMG/TAKE_OUT.jpeg</file>
+        <file>CATEGORY_IMG/USA.jpeg</file>
+    </qresource>
+</RCC>
