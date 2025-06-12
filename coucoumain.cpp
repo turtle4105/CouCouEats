@@ -7,6 +7,12 @@ CouCouMain::CouCouMain(QWidget *parent): QMainWindow(parent), ui(new Ui::CouCouM
     client = new TcpClient(this);  // MainWindow 소멸 시 같이 삭제됨
     client->connectToServer();     // 연결은 딱 한 번만 하면 됨
 
+    connect(ui->search_icon, &QPushButton::clicked, this, [=](){
+        QJsonObject req;
+        req["signal"] = "search";
+        client->sendJson(req);
+    });
+
     // 비회원 로그인 시 분기처리 해야 됨
     connect(ui->BtnMyEats, &QPushButton::clicked, this, /*[=](){
         QJsonObject req;
@@ -16,7 +22,7 @@ CouCouMain::CouCouMain(QWidget *parent): QMainWindow(parent), ui(new Ui::CouCouM
 
     // 서버로부터 받은 JSON 응답을 여기 처리
     connect(client, &TcpClient::jsonReceived, this, [=](QJsonObject json){
-        qDebug() << "here";
+        qDebug() << json;
 
         QString signal = json["signal"].toString();
         // Signal 분기 처리 시작
@@ -27,6 +33,7 @@ CouCouMain::CouCouMain(QWidget *parent): QMainWindow(parent), ui(new Ui::CouCouM
 
     w_grid_category* grid_category = new w_grid_category;
     ui->main_layout->addWidget(grid_category);
+
 }
 
 void CouCouMain::showChoiceLoginDialg() {
