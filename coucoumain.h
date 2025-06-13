@@ -2,8 +2,8 @@
 #define COUCOUMAIN_H
 
 #include "tcpclient.h"
-#include "part1_login_signup.h"
-#include "w_grid_category.h"
+#include "main2_login.h"
+#include "w_v_store_card.h"
 
 #include <QMainWindow>
 #include <QDialog>
@@ -22,7 +22,6 @@ class CouCouMain : public QMainWindow
 public:
     CouCouMain(QWidget *parent = nullptr);
     void showChoiceLoginDialg();
-    void categoryBtn();
     ~CouCouMain();
 
 private:
@@ -30,5 +29,6 @@ private:
     TcpClient* client;
     // 이름 수정
     main2_login *login;
+    w_v_store_card *store_card_widget;
 };
 #endif // COUCOUMAIN_H

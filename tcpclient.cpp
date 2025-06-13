@@ -13,7 +13,7 @@ TcpClient::TcpClient(QObject *parent)
 
 //서버에 연결
 void TcpClient::connectToServer() {
-    socket->connectToHost("10.10.20.109", 20005);
+    socket->connectToHost("10.10.20.109", 20006);
     if (socket->waitForConnected(3000)) {
         qDebug() << "서버에 연결되었습니다.";
     } else {
@@ -28,11 +28,13 @@ void TcpClient::sendJson(const QJsonObject &json) {
         QJsonDocument doc(json);
         //JSON -> 문자열 형태로 변환
         QByteArray data = doc.toJson(QJsonDocument::Compact);
-        data.append('\n');
         //소켓을 통해 전송
+        data.append('\n');
         socket->write(data);
         socket->flush();
+
     }
+
 }
 
 // 서버 연결 확인용
